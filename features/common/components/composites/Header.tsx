@@ -10,10 +10,11 @@ const Header = () => {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
 
   return (
-    <div className="sm:max-w-109.5 sm:min-w-109.5 md:flex-col lg:flex-row md:max-w-202.75 md:min-w-202.75 lg:max-w-315 lg:min-w-315 md:max-h-24 md:min-h-24 mx-auto flex items-center justify-between min-h-32 max-h-32">
-      <div className="flex md:hidden">
+    <div className="max-w-109.5 min-w-109.5 md:flex-col lg:flex-row md:max-w-202.75 md:min-w-202.75 lg:max-w-315 lg:min-w-315 md:max-h-24 md:min-h-24 flex items-center justify-center lg:gap-20 gap-3 min-h-32 max-h-32">
+      <div className="flex lg:gap-7.25 lg:justify-start md:items-center md:justify-between md:gap-71.75 flex-col md:flex-row justify-end md:max-w-202.75 md:min-w-202.75 lg:max-w-138.25 lg:min-w-138.25">
+        {/* //!BurgerMenu */}
         <button
-          className="text-[#023047] hover:text-white "
+          className="text-[#023047] hover:text-white md:hidden flex"
           onClick={() => setMobileMenuIsOpen((prev) => !prev)}
         >
           {mobileMenuIsOpen ? (
@@ -22,10 +23,8 @@ const Header = () => {
             <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
           )}
         </button>
-      </div>
-      <div className="flex lg:gap-[29] md:items-center md:justify-between md:gap-71.75 flex-col md:flex-row justify-end">
         {/* //! ----- Logo Section */}
-        <div className="flex gap-1.5 md:max-w-44.75 max-w-33.25 max-h-6.5  md:max-h-8.25 items-center">
+        <div className="flex gap-1.5 md:max-w-44.75 md:min-w-44.75 max-w-33.25 max-h-6.5 md:max-h-8.25 items-center lg:justify-center ">
           <Image
             src={"/marketLogo.svg"}
             alt="MarketLogo"
@@ -35,8 +34,22 @@ const Header = () => {
           />
           <h2 className="font-bold text-[22px]">Luminae</h2>
         </div>
+        {/* //! ------- Market Section */}
+        <div className="flex md:hidden">
+          <div>
+            <Image
+              src={"/Cards.svg"}
+              alt="Card Picture"
+              width={24}
+              height={24}
+            />
+            <div className="max-w-6 max-h-6  rounded-full bg-[#3DC47E] flex justify-center items-center">
+              3
+            </div>
+          </div>
+        </div>
         {/* //! ------ Search Section */}
-        <div className=" min-w-[438px] md:max-w-86.25 md:min-w-86.25 max-h-10 min-h-10 flex  gap-3  border-[1.4] border-[#D9D9D9] rounded-sm">
+        <div className="min-w-109.5 md:max-w-86.25 md:min-w-86.25 max-h-10 min-h-10 flex  gap-3  border-[1.4] border-[#D9D9D9] rounded-sm items-center pl-3">
           <div className="max-w-69.25 max-h-6 flex items-center justify-between gap-4">
             <input
               type="text"
