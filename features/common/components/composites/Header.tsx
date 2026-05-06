@@ -44,7 +44,7 @@ const Header = () => {
               height={24}
             />
             <div className="max-w-6 max-h-6  rounded-full bg-[#3DC47E] flex justify-center items-center">
-              3
+              <span>3</span>
             </div>
           </div>
         </div>
