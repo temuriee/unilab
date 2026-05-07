@@ -2,10 +2,16 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/features/common/components/composites/Header";
-
+import Category from "@/features/categories/components/Category";
+import { Lato } from "next/font/google";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
 });
 
 const geistMono = Geist_Mono({
@@ -28,11 +34,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-w-full min-h-full flex flex-col">
-        <div className="max-w-360 mx-auto">
+      <body className={`${lato.className} min-w-full min-h-full flex flex-col`}>
+        <div className="mx-auto">
           <Header />
-          {children}
         </div>
+        <Category />
+        <div className="mx-auto">{children}</div>
       </body>
     </html>
   );
