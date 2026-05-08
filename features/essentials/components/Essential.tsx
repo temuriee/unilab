@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Essential = () => {
   return (
-    <main className="max-w-360 w-full flex items-center justify-center">
+    <main className="w-full flex items-center justify-center ">
       <div>
         <Image
           src={"/essentialLeft.png"}

@@ -11,9 +11,9 @@ const Header = () => {
 
   return (
     <header className="max-w-360 w-full flex items-center justify-center">
-      <div className="relative max-w-109.5 min-w-109.5 md:flex-col lg:flex-row md:max-w-202.75 md:min-w-202.75 lg:max-w-315 lg:min-w-315 md:max-h-24 md:min-h-24 flex items-center justify-center lg:justify-between lg:gap-20 gap-3 min-h-32 max-h-32 mt-3 md:mt-0">
-        <div className="flex lg:gap-7 lg:justify-start md:items-center md:justify-between md:gap-71.75 md:max-w-202.75 md:min-w-202.75 lg:max-w-138.25 lg:min-w-138.25 max-w-109.5 min-w-109.5 max-h-32 min-h-32 md:max-h-10 md:min-h-10 flex-col md:flex-row items-center justify-center gap-12">
-          <div className="flex justify-between items-center w-full">
+      <div className="relative max-w-109.5 min-w-109.5 md:flex-col lg:flex-row md:max-w-202.75 md:min-w-202.75 lg:max-w-315 lg:min-w-315 md:max-h-24 md:min-h-24 flex items-center justify-center lg:justify-between lg:gap-15 gap-3 min-h-32 max-h-32 mt-3 md:mt-0">
+        <div className="flex lg:gap-7 lg:justify-start md:items-center md:justify-between md:gap-71.75 md:max-w-202.75 md:min-w-202.75 lg:max-w-130 lg:min-w-130 max-w-109.5 min-w-109.5 max-h-32 min-h-32 md:max-h-10 md:min-h-10 flex-col md:flex-row items-center justify-center gap-12">
+          <div className="flex justify-between items-center max-w-35">
             {/* //!BurgerMenu */}
             <button
               className="text-[#023047] hover:text-white md:hidden flex"
@@ -27,7 +27,7 @@ const Header = () => {
             </button>
 
             {/* //! ----- Logo Section */}
-            <div className="flex gap-1.5 md:max-w-44.75 md:min-w-44.75 max-w-33.25 max-h-6.5 md:max-h-8.25 items-center lg:max-w-[138px] ">
+            <div className="flex gap-1.5 md:max-w-44.75 md:min-w-44.75 max-w-33.25 max-h-6.5 md:max-h-8.25 items-center justify-center lg:justify-start ">
               <Image
                 src={"/marketLogo.svg"}
                 alt="MarketLogo"

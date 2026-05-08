@@ -63,7 +63,7 @@ export function CategoryItem({ item, isActive }: CategoryItemProps) {
     >
       {item.href && !hasMegaMenu ? (
         <Link href={item.href} className={triggerClasses}>
-          {item.label}
+          <li> {item.label}</li>
         </Link>
       ) : (
         <button
