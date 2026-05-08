@@ -1,20 +1,23 @@
-import { CategoriesListData } from "../data/CategoriesData";
+"use client";
 
-const Categories = () => {
+import { CATEGORY_ITEMS } from "../data/MenuData";
+import { CategoryItem } from "./CategoryItem";
+
+export function Categories() {
   return (
-    <div className="hidden md:flex lg:max-w-315 md:max-w-202.75 max-h-13 min-h-13 w-full mx-auto items-center justify-between mt-7 hover:cursor-pointer">
-      {CategoriesListData.map((category) => (
-        <div
-          key={category}
-          className="hover:transition-transform hover:scale-115 ease-in-out duration-300"
-        >
-          <p className="text-[#555555] hover:text-[#FF7A00] transition-all ease-in-out text-sm cursor-pointer ">
-            {category}
-          </p>
-        </div>
-      ))}
-    </div>
+    <nav
+      className="relative w-full bg-white border-b border-gray-200"
+      aria-label="Main navigation"
+    >
+      <div className="max-w-7xl max-h-13 min-h-13 mx-auto px-4 overflow-visible mt-7 ">
+        <ul className="flex items-center overflow-x-auto overflow-y-visible z-50 scrollbar-hide justify-between">
+          {CATEGORY_ITEMS.map((item) => (
+            <li key={item.label} className="overflow-visible">
+              <CategoryItem item={item} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
   );
-};
-
-export default Categories;
+}

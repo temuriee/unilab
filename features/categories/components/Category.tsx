@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CategoryList from "./CategoryList";
-import Categories from "./Categories";
+import { Categories } from "./Categories";
 
 const Category = () => {
   return (

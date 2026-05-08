@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/features/common/components/composites/Header";
 import Category from "@/features/categories/components/Category";
 import { Lato } from "next/font/google";
+import { Categories } from "@/features/categories/components/Categories";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

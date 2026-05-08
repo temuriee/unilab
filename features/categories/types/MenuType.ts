@@ -1,4 +1,4 @@
-export interface NavItem {
+export interface CategoryItem {
   label: string;
   href?: string;
   megaMenu?: {
@@ -12,4 +12,12 @@ export interface NavItem {
       href: string;
     };
   };
+}
+
+export interface MenuDropdownProps {
+  item: CategoryItem;
+  top: number;
+  left: number;
+  onMouseEnter: () => void;
+  onMouseLeave: () => void;
 }
