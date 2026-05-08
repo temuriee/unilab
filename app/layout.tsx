@@ -4,8 +4,7 @@ import "./globals.css";
 import Header from "@/features/common/components/composites/Header";
 import Category from "@/features/categories/components/Category";
 import { Lato } from "next/font/google";
-import { Categories } from "@/features/categories/components/Categories";
-import Essential from "@/features/essentials/components/Essential";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -42,7 +41,6 @@ export default function RootLayout({
         </div>
         <Category />
         <div className="mx-auto">{children}</div>
-        <Essential />
       </body>
     </html>
   );
