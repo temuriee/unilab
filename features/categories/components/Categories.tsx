@@ -2,9 +2,12 @@ import { CategoriesListData } from "../data/CategoriesData";
 
 const Categories = () => {
   return (
-    <div className="hidden md:flex lg:max-w-315 md:max-w-202.75 max-h-13 min-h-13 w-full mx-auto items-center justify-between mt-7">
+    <div className="hidden md:flex lg:max-w-315 md:max-w-202.75 max-h-13 min-h-13 w-full mx-auto items-center justify-between mt-7 hover:cursor-pointer">
       {CategoriesListData.map((category) => (
-        <div key={category}>
+        <div
+          key={category}
+          className="hover:transition-transform hover:scale-115 ease-in-out duration-300"
+        >
           <p className="text-[#555555] hover:text-[#FF7A00] transition-all ease-in-out text-sm cursor-pointer ">
             {category}
           </p>
