@@ -9,15 +9,15 @@ interface ShowcaseCardProps {
 
 export function ShowcaseCard({ product }: ShowcaseCardProps) {
   return (
-    <div className="relative group cursor-pointer rounded-lg overflow-hidden max-h-110  md:max-w-[811px]">
+    <div className="relative group cursor-pointer rounded-lg overflow-hidden max-h-110 md:max-w-[811px]">
       {/* Image */}
-      <div className="relative w-full aspect-[4/3] bg-gray-100 max-h-110">
+      <div className="relative w-full max-h-[440px] min-h-[440px] aspect-[4/3] bg-gray-100 max-h-110">
         <Image
           src={product.image}
           alt={product.name}
           width={410}
           height={344}
-          className="object-cover group-hover:scale-105 transition-transform duration-500 md:max-w-[811px] md:max-h-[344px] md:min-w-[811px] md:min-h-[811px] lg:max-w-[410px] lg:min-w-[410px] lg:max-h-[344px] lg:min-h-[344px] max-w-[357px] min-w-[357px] max-w-89.25 min-w-89.25 min-h-86 "
+          className="object-cover group-hover:scale-105 transition-transform duration-500 md:max-w-[811px] md:max-h-[344px] md:min-w-[811px] md:min-h-[811px] lg:max-w-[410px] lg:min-w-[410px] lg:max-h-[375px] lg:min-h-[375px] max-w-[357px] min-w-[357px] max-w-92 min-w-92 min-h-93 "
         />
 
         {/* Dark gradient overlay at bottom */}

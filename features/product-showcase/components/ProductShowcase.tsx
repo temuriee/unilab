@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 
 export function ProductShowcase() {
   return (
-    <section className="w-full md:max-w-7xl mx-auto px-4 py-8 max-w-[440px] max-h-[480px] ">
+    <section className="w-full lg:max-w-7xl mx-auto max-w-[440px] max-h-[480px] md:max-h-[1420px] md:min-h-[1420px] md:max-w-[811px] lg:max-h-[440px] lg:min-h-[440px] ">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-xl font-bold text-gray-900">Trending must-haves</h2>
@@ -44,7 +44,7 @@ export function ProductShowcase() {
         >
           {SHOWCASE_PRODUCTS.map((product) => (
             <SwiperSlide key={product.id}>
-              <div className="mx-auto max-w-[440px] max-h-[440px] min-h-[440px]">
+              <div className="mx-auto max-w-[440px] min max-h-[440px] min-h-[400px]">
                 <ShowcaseCard product={product} />
               </div>
             </SwiperSlide>

@@ -6,6 +6,9 @@ import Category from "@/features/categories/components/Category";
 import { Lato } from "next/font/google";
 import { FlashSales } from "@/features/flash-sales/components/FlashSales";
 import { ProductShowcase } from "@/features/product-showcase/components/ProductShowcase";
+import { Top100 } from "@/features/top100/components/Top100";
+import { PromoBanners } from "@/features/promo-banners/components/PromoBanners";
+import { ProductHighlight } from "@/features/product-highlight/components/ProductHighlight";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,14 +40,20 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className={`${lato.className} min-w-full min-h-full flex flex-col`}>
-        <div className="mx-auto">
+      <body
+        className={`${lato.className} min-w-full min-h-full flex flex-col `}
+      >
+        <div className=" mx-auto  bg-white">
           <Header />
         </div>
         <Category />
+
         <div className="mx-auto">{children}</div>
         <FlashSales />
         <ProductShowcase />
+        <Top100 />
+        <PromoBanners />
+        <ProductHighlight />
       </body>
     </html>
   );

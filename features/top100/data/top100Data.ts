@@ -1,0 +1,48 @@
+import { Top100Product } from "../types";
+
+export const TOP100_PRODUCTS: Top100Product[] = [
+  {
+    id: 1,
+    brand: "Mango",
+    description: "Kimono & Caftan - Black - Regular fit",
+    image: "/Mango.png",
+    price: 228,
+    originalPrice: 290,
+    discount: 10,
+    rating: 5,
+    reviewCount: 289,
+  },
+  {
+    id: 2,
+    brand: "Zara",
+    description: "Midi top - Daily fit",
+    image: "/BlueZara.png",
+    price: 95,
+    originalPrice: 145,
+    discount: 7,
+    rating: 5,
+    reviewCount: 523,
+  },
+  {
+    id: 3,
+    brand: "Uniqlo",
+    description: "Midi atlas Slim fit - bohemian",
+    image: "/Uniqlo.png",
+    price: 125,
+    originalPrice: 156,
+    discount: 8,
+    rating: 5,
+    reviewCount: 86,
+  },
+  {
+    id: 4,
+    brand: "Mango dress",
+    description: "Kimono & Caftan - Colorful - Night club fit",
+    image: "/MangoDress.png",
+    price: 365,
+    originalPrice: 487,
+    discount: 15,
+    rating: 5,
+    reviewCount: 121,
+  },
+];
