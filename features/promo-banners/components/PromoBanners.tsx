@@ -1,11 +1,19 @@
 import { PROMO_BANNERS } from "../data/promoBannersData";
 import { PromoBannerCard } from "./PromoBannerCard";
 
-export function PromoBanners() {
+interface PromoBannersProps {
+  slice?: [number, number];
+}
+
+export function PromoBanners({ slice }: PromoBannersProps) {
+  const banners = slice
+    ? PROMO_BANNERS.slice(slice[0], slice[1])
+    : PROMO_BANNERS.slice(0, 2);
+
   return (
-    <section className="w-full lg:max-w-7xl max-w-[811px] max-h-[470px] min-h-[470px] hidden md:flex mx-auto mt-18">
-      <div className="flex  md:flex-row gap-5 ">
-        {PROMO_BANNERS.map((banner) => (
+    <section className="w-full max-w-7xl mx-auto hidden md:flex justify-center mt-17">
+      <div className="flex md:flex-row gap-4 max-h-[470px] lg:h-[380px]">
+        {banners.map((banner) => (
           <PromoBannerCard key={banner.id} banner={banner} />
         ))}
       </div>

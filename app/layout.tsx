@@ -9,6 +9,7 @@ import { ProductShowcase } from "@/features/product-showcase/components/ProductS
 import { Top100 } from "@/features/top100/components/Top100";
 import { PromoBanners } from "@/features/promo-banners/components/PromoBanners";
 import { ProductHighlight } from "@/features/product-highlight/components/ProductHighlight";
+import { Footer } from "@/features/common/components/primitives/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -54,6 +55,8 @@ export default function RootLayout({
         <Top100 />
         <PromoBanners />
         <ProductHighlight />
+        <PromoBanners slice={[2, 4]} />
+        <Footer />
       </body>
     </html>
   );

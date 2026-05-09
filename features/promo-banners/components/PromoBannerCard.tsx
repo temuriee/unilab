@@ -11,7 +11,8 @@ export function PromoBannerCard({ banner }: PromoBannerCardProps) {
     <div className="flex flex-1 overflow-hidden max-w-[395.5px] min-w-[395.5px] max-h-[470px] min-h-[470px] lg:max-w-[620px] lg:max-h-[383px] lg:min-w-[620px] lg:min-h-[383px] ">
       {/* Text side */}
       <div
-        className={`flex flex-col justify-center gap-4 px-6 py-8 md:px-8 lg:px-10 max-w-[197.75px] min-w-[197.75px]  max-h-[467px] min-h-[467px] lg:max-w-[310px] lg:max-h-[383px] lg:min-h-[383px] lg:min-w-[310px] bg-[${banner.bgColor}]`}
+        className="flex flex-col justify-center gap-4 px-6 py-8 md:px-8 lg:px-10 max-w-[197.75px] min-w-[197.75px]  max-h-[467px] min-h-[467px] lg:max-w-[310px] lg:max-h-[383px] lg:min-h-[383px] lg:min-w-[310px] "
+        style={{ backgroundColor: banner.bgColor }}
       >
         <h2 className="text-white font-extrabold text-4xl md:text-2xl lg:text-3xl leading-tight">
           {banner.title}

@@ -35,6 +35,6 @@ export const PRODUCT_HIGHLIGHTS: ProductHighlight[] = [
       "Thin. Light. Mind-blowing. The ultimate iPad experience with M4 chip.",
     image: "/ipad.png",
     imageAlt: "iPad Pro",
-    bgColor: "#F0E8DD",
+    bgColor: "#CBC3E3",
   },
 ];

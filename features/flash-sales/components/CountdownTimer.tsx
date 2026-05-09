@@ -20,7 +20,7 @@ export function CountdownTimer({ endsAt }: CountdownTimerProps) {
         ].map(({ value, label }, i) => (
           <div key={label} className="flex items-center gap-1">
             <div className="flex flex-col items-center">
-              <span className="text-lg font-bold text-gray-800 leading-none tabular-nums">
+              <span className="text-lg font-extrabold text-gray-800 leading-none tabular-nums">
                 {value}
               </span>
               <span className="text-[10px] text-gray-400">{label}</span>
