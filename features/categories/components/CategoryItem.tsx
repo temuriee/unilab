@@ -30,8 +30,8 @@ export function CategoryItem({ item, isActive }: CategoryItemProps) {
     if (!triggerRef.current) return { top: 0, left: 0 };
     const rect = triggerRef.current.getBoundingClientRect();
     const viewportWidth = window.innerWidth;
-    const dropdownWidth = 1100;
-
+    const isMiddle = viewportWidth < 1000;
+    const dropdownWidth = isMiddle ? 668 : 1100;
     const rawLeft = rect.left;
     const maxLeft = viewportWidth - dropdownWidth - 16; // 16px margin from right edge
     const left = Math.max(8, Math.min(rawLeft, maxLeft));

@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/features/common/components/composites/Header";
 import Category from "@/features/categories/components/Category";
 import { Lato } from "next/font/google";
+import { FlashSales } from "@/features/flash-sales/components/FlashSales";
+import { ProductShowcase } from "@/features/product-showcase/components/ProductShowcase";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +43,8 @@ export default function RootLayout({
         </div>
         <Category />
         <div className="mx-auto">{children}</div>
+        <FlashSales />
+        <ProductShowcase />
       </body>
     </html>
   );

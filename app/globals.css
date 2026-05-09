@@ -1,4 +1,10 @@
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+.swiper {
+  overflow: hidden !important;
+}
 
 :root {
   --background: #ffffff;

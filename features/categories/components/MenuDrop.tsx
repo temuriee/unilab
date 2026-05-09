@@ -27,13 +27,13 @@ export function MenuDropdown({
         top: `${top}px`,
         left: `${left}px`,
         zIndex: 9999,
-        width: "1100px",
         maxWidth: "95vw",
       }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       role="region"
       aria-label={`${item.label} menu`}
+      className="lg:max-w-267.5 max-w-193.75 min-w-193.75 max-h-97 "
     >
       <div className="bg-white border border-gray-200 shadow-xl rounded-b-md p-6 grid grid-cols-[1fr_auto] gap-6">
         {/* Left: sections grid */}
@@ -81,7 +81,10 @@ export function MenuDropdown({
             </div>
 
             {featuredImage && (
-              <Link href={featuredImage.href} className="shrink-0 block">
+              <Link
+                href={featuredImage.href}
+                className="shrink-0 hidden lg:block"
+              >
                 <div className="w-70 h-85 rounded-md overflow-hidden bg-gray-100">
                   <Image
                     src={featuredImage.src}
