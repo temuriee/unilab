@@ -4,7 +4,6 @@ import { FLASH_SALE_PRODUCTS } from "../data/flashSaleData";
 import { FlashSaleCard } from "./FlashSaleCard";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -38,7 +37,6 @@ export function FlashSales() {
       </div>
       <div className="md:hidden  overflow-hidden ">
         <Swiper
-          modules={[Pagination]}
           spaceBetween={16}
           slidesPerView={2}
           pagination={{ clickable: true }}

@@ -3,14 +3,14 @@
 import { SHOWCASE_PRODUCTS } from "../data/showcaseData";
 import { ShowcaseCard } from "./ShowcaseCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 export function ProductShowcase() {
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 py-8">
+    <section className="w-full md:max-w-7xl mx-auto px-4 py-8 max-w-[440px] max-h-[480px] ">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-xl font-bold text-gray-900">Trending must-haves</h2>
@@ -34,11 +34,9 @@ export function ProductShowcase() {
           </svg>
         </a>
       </div>
-
       {/* Mobile: swiper 1 slide */}
       <div className="md:hidden w-full overflow-hidden">
         <Swiper
-          modules={[Pagination]}
           spaceBetween={16}
           slidesPerView={1.2}
           pagination={{ clickable: true }}
@@ -46,19 +44,20 @@ export function ProductShowcase() {
         >
           {SHOWCASE_PRODUCTS.map((product) => (
             <SwiperSlide key={product.id}>
-              <ShowcaseCard product={product} />
+              <div className="mx-auto max-w-[440px] max-h-[440px] min-h-[440px]">
+                <ShowcaseCard product={product} />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
       {/* Tablet: 2 columns */}
-      <div className="hidden md:grid lg:hidden grid-cols-1 gap-4">
+      <div className=" hidden md:flex lg:hidden flex-col gap-4  mx-auto w-full max-w-[811px] ">
         {SHOWCASE_PRODUCTS.slice(0, 4).map((product) => (
           <ShowcaseCard key={product.id} product={product} />
         ))}
       </div>
-
       {/* Desktop: 3 columns */}
       <div className="hidden lg:grid grid-cols-3 gap-6">
         {SHOWCASE_PRODUCTS.slice(0, 3).map((product) => (
