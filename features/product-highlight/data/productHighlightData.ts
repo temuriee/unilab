@@ -33,7 +33,7 @@ export const PRODUCT_HIGHLIGHTS: ProductHighlight[] = [
     title: "IPAD PRO",
     description:
       "Thin. Light. Mind-blowing. The ultimate iPad experience with M4 chip.",
-    image: "/ipad.png",
+    image: "/Ipad.png",
     imageAlt: "iPad Pro",
     bgColor: "#CBC3E3",
   },
