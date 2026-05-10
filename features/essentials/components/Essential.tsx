@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Essential = () => {
   return (
-    <section className="w-full max-w-227.5 relative  items-center justify-center hidden md:flex">
+    <section className="w-full max-w-[991px] lg:max-w-[1440px] relative  items-center justify-center hidden md:flex">
       <div className="shrink-0 relative">
         <Image
           src={"/essentialLeft.png"}

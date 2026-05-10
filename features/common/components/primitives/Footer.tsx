@@ -5,7 +5,7 @@ import { NewsletterBox } from "./NewsletterBox";
 
 export function Footer() {
   return (
-    <footer className="w-full  mt-39">
+    <footer className="w-full mt-12 md:mt-39">
       <div className="max-h-[501px] min-h-[501px] md:max-h-[557px] md:min-h-[557px] lg:max-h-[362px] lg:min-h-[362px] relative bg-[#D6E4EC] flex justify-center items-center ">
         {/* Newsletter */}
         <div className="w-full absolute -top-35 max-w-7xl mx-auto px-4 pt-10 pb-8 hidden md:flex justify-center">
@@ -13,13 +13,13 @@ export function Footer() {
         </div>
 
         {/* Links grid */}
-        <div className="w-full max-w-[362px] min-w-[362px] min-h-[381px] max-h-[381px] md:max-w-[440px]  lg:max-w-[889px] md:mx-auto md:mt-33 mt-[60px]  ">
+        <div className="w-full max-w-[362px] min-w-[362px] min-h-[381px] max-h-[381px] md:max-w-[440px]  lg:max-w-[889px] md:mx-auto lg:mt-33 mt-[40px]  ">
           {/* Desktop & Tablet: grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4  md:gap-20 gap-15 md:pl-10 lg:pl-8 lg:max-w-[889px]  lg:gap-[135px] max-w-[440px] min-w-[440px] min-h-[381px] max-h-[381px] lg:mt-7 md:mt-0 ">
+          <div className="grid grid-cols-2 lg:grid-cols-4  md:gap-20 gap-10 md:pl-10 lg:pl-8 lg:max-w-[889px]  lg:gap-[135px] md:max-w-[440px] md:min-w-[440px] max-w-[362px] min-w-[362px] min-h-[381px] max-h-[381px] lg:mt-7 md:mt-0 ">
             {FOOTER_COLUMNS.map((column) => (
               <div
                 key={column.title}
-                className="max-w-[135px] min-w-[135px] lg:max-h-[170px] lg:mt-10"
+                className="md:max-w-[135px] md:min-w-[135px] max-w-[107px] min-w-[107px] lg:max-h-[170px] lg:mt-10"
               >
                 <h3 className="text-gray-700 font-bold text-sm mb-3">
                   {column.title}

@@ -10,10 +10,12 @@ import "swiper/css/navigation";
 
 export function ProductShowcase() {
   return (
-    <section className="w-full lg:max-w-7xl mx-auto max-w-[440px] max-h-[480px] md:max-h-[1420px] md:min-h-[1420px] md:max-w-[811px] lg:max-h-[440px] lg:min-h-[440px] ">
+    <section className="w-full lg:max-w-7xl mx-auto max-w-[440px] max-h-[480px] md:max-h-[1420px] md:min-h-[1420px] md:max-w-[811px] lg:max-h-[510px] lg:min-h-[510px] mt-12 md:mt-17">
       {/* Header */}
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-xl font-bold text-gray-900">Trending must-haves</h2>
+      <div className="flex items-center justify-between mb-6 md:mb-12">
+        <h2 className="text-[28px] font-semibold leading-5 text-gray-900">
+          Trending must-haves
+        </h2>
         <a
           href="/products"
           className="text-sm text-gray-500 hover:text-orange-500 transition-colors duration-150 flex items-center gap-1"

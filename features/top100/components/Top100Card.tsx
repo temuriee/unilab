@@ -27,9 +27,7 @@ export function Top100Card({ product }: Top100CardProps) {
       <div className="p-5">
         <div className="flex items-start justify-between gap-2 mb-3">
           <div className="flex flex-col gap-0.5">
-            <p className="font-semibold text-gray-900 text-sm">
-              {product.brand}
-            </p>
+            <p className="font-bold text-gray-900 text-sm">{product.brand}</p>
             <p className="text-gray-400 text-xs">{product.description}</p>
           </div>
           {/* Wishlist */}
@@ -85,13 +83,13 @@ export function Top100Card({ product }: Top100CardProps) {
 
         {/* Price */}
         <div className="flex items-center gap-2 mt-1.5">
-          <span className="text-orange-500 font-bold text-sm">
+          <span className="text-[#FF2E00] font-extrabold text-sm">
             ${product.price}
           </span>
           <span className="text-gray-400 text-xs line-through">
             ${product.originalPrice}
           </span>
-          <span className="text-red-500 text-xs font-semibold">
+          <span className="text-red-400 text-xs font-semibold">
             -{product.discount}%
           </span>
         </div>

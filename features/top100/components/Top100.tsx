@@ -6,10 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export function Top100() {
   return (
-    <section className="w-full lg:max-w-7xl mx-auto lg:mt-20 md:max-w-[811px] max-w-[440px] mt-12">
+    <section className="w-full lg:max-w-7xl mx-auto md:mt-17 md:max-w-[811px] max-w-[440px] mt-12">
       {/* Header */}
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-xl font-bold text-gray-900">Top100</h2>
+      <div className="flex items-center justify-between mb-6 md:mb-12">
+        <h2 className="text-[28px] font-bold leading-5 text-gray-900">
+          Top100
+        </h2>
         <a
           href="/top100"
           className="text-sm text-gray-500 hover:text-orange-500 transition-colors duration-150 flex items-center gap-1"

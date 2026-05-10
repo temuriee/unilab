@@ -4,12 +4,8 @@ import "./globals.css";
 import Header from "@/features/common/components/composites/Header";
 import Category from "@/features/categories/components/Category";
 import { Lato } from "next/font/google";
-import { FlashSales } from "@/features/flash-sales/components/FlashSales";
-import { ProductShowcase } from "@/features/product-showcase/components/ProductShowcase";
-import { Top100 } from "@/features/top100/components/Top100";
-import { PromoBanners } from "@/features/promo-banners/components/PromoBanners";
-import { ProductHighlight } from "@/features/product-highlight/components/ProductHighlight";
 import { Footer } from "@/features/common/components/primitives/Footer";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,20 +38,14 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body
-        className={`${lato.className} min-w-full min-h-full flex flex-col `}
+        className={`${lato.className} min-w-full min-h-full flex flex-col justify-center mx-auto `}
       >
-        <div className=" mx-auto  bg-white">
+        <Toaster position="bottom-right" />
+        <div className="mx-auto  bg-white">
           <Header />
         </div>
         <Category />
-
         <div className="mx-auto">{children}</div>
-        <FlashSales />
-        <ProductShowcase />
-        <Top100 />
-        <PromoBanners />
-        <ProductHighlight />
-        <PromoBanners slice={[2, 4]} />
         <Footer />
       </body>
     </html>

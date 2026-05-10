@@ -42,7 +42,7 @@ const Category = () => {
             </div>
           </div>
           {/* //! MIDDLE SIDE */}
-          <div className="hidden max-w-122 max-h-15.5 min-h-15.5 w-full lg:flex pl-18 pr-18 border-r border-l border-[#7B7B7B]">
+          <div className="hidden max-w-122 max-h-15.5 min-h-15.5 w-full lg:flex pl-18 pr-18 border-r border-l gap-2 border-[#7B7B7B]">
             <div>
               <Image
                 src={"/cosmetic.svg"}

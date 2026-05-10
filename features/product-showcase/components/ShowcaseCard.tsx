@@ -40,7 +40,7 @@ export function ShowcaseCard({ product }: ShowcaseCardProps) {
         )}
         {/* Bottom info overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between gap-2 bg-[#262626]">
-          <div>
+          <div className="flex flex-col gap-2">
             <p className="text-white font-semibold text-sm leading-tight">
               {product.name}
             </p>
@@ -50,11 +50,10 @@ export function ShowcaseCard({ product }: ShowcaseCardProps) {
           </div>
 
           {/* Price + Shop Now button */}
-          <div className="flex items-center gap-2 shrink-0 ">
-            <button className="bg-[#262626] border border-white text-white text-xs font-semibold px-3 py-1.5 rounded-md hover:bg-orange-500 hover:text-white transition-colors duration-200 whitespace-nowrap flex items-center gap-2">
-              ${product.price}
-              <span className="w-px h-3 bg-white/50"></span>
-              Shop Now
+          <div className="flex items-center bg-[#262626] border border-white max-w-[145px] min-w-[145px] max-h-[44px] min-h-[44px] gap-2 shrink-0 hover:bg-orange-500 transition-colors duration-200 whitespace-nowrap rounded-lg">
+            <button className=" max-w-[105px] min-w-[105px] max-h-[20px] min-h-[20px] mx-auto text-white text-xs font-semibold hover:text-white space-x-2">
+              <span>${product.price}</span>
+              <span className="font-bold">Shop Now</span>
             </button>
           </div>
         </div>

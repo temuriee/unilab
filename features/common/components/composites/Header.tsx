@@ -27,14 +27,16 @@ const Header = () => {
             </button>
 
             {/* //! ----- Logo Section */}
-            <div className="flex gap-1.5 md:max-w-44.75 md:min-w-44.75 max-w-33.25 max-h-6.5 md:max-h-8.25 items-center justify-center lg:justify-start ">
-              <Image
-                src={"/marketLogo.svg"}
-                alt="MarketLogo"
-                width={49}
-                height={33}
-                className="md:max-w-12.25 md:max-h-8.25 max-w-10 max-h-6.5 min-w-10 min-h-6.5 "
-              />
+            <div className="flex gap-1.5 md:max-w-44.75 md:min-w-44.75 max-w-33.25 max-h-6.5 md:max-h-8.25 items-center">
+              <Link href={"/"}>
+                <Image
+                  src={"/marketLogo.svg"}
+                  alt="MarketLogo"
+                  width={49}
+                  height={33}
+                  className="md:max-w-12.25 md:max-h-8.25 max-w-10 max-h-6.5 min-w-10 min-h-6.5 "
+                />
+              </Link>
               <h2 className="font-bold text-[22px]">Luminae</h2>
             </div>
             {/* //! ------- Market Section */}
@@ -53,7 +55,7 @@ const Header = () => {
             </div>
           </div>
           {/* //! ------ Search Section */}
-          <div className="min-w-109.5 md:max-w-86.25 md:min-w-86.25 max-h-10 min-h-10 flex  gap-3  border-[1.4] border-[#D9D9D9] rounded-sm items-center pl-3 ">
+          <div className="min-w-109.5 md:max-w-86.25 md:min-w-86.25 md:max-h-10 md:min-h-10 flex  gap-3  border-[1.4] border-[#D9D9D9] rounded-sm items-center max-h-[54px] min-h-[54px] pl-3 ">
             <div className="max-w-92.5 min-w-92.5  md:max-w-69.25 md:min-w-69.25 max-h-6 flex items-center justify-between gap-4">
               <input
                 type="text"
@@ -82,7 +84,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="md:flex lg:gap-20 md:gap-76.75 md:justify-between hidden">
+        <div className="md:flex lg:gap-30 md:gap-76.75 md:justify-between hidden">
           {/* //! ------ List Section */}
           <div className="max-w-105 min-w-105 max-h-5">
             <ul className="flex justify-between">
@@ -97,8 +99,8 @@ const Header = () => {
           </div>
 
           {/* //! ------ SocialMedia Section */}
-          <div className="max-h-6 min-h-6 max-w-[127.5px] min-w-[127.5px] md:max-w-21 md:min-w-21 ">
-            <ul className="flex justify-end gap-3 items-center">
+          <div className="max-h-6 min-h-6  md:max-w-21 md:min-w-21 ">
+            <ul className="flex justify-end  gap-3 items-center">
               {mediaData.map((e) => (
                 <li key={e.href}>
                   <a href={e.href} target="_blank" rel="noopener noreferrer">

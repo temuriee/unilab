@@ -43,7 +43,7 @@ export function CategoryItem({ item, isActive }: CategoryItemProps) {
   };
 
   const triggerClasses = `
-    relative flex items-center gap-1 px-3 py-2 text-sm font-medium
+    relative flex items-center gap-1 text-sm font-medium
     whitespace-nowrap transition-colors duration-150 cursor-pointer
     ${
       isOpen || isActive
